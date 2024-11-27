@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralogic</title>
+    <link rel="stylesheet" href="paralogic.css">
+</head>
+<body>
+    <div id="paralogic-main">
+        <h1>:PARALOGIC</h1>
+        <div id="paralogic-content">
+            <div class="paralogic-col" id="paralogic-topoi-col">
+                <h2>Themes</h2>
+                <hr>
+                <button onclick="post_to_table('new category', '')" title="Add new theme">➕</button>
+                <table id="paralogic-topoi">
+                </table>    
+            </div>
+            <div class="paralogic-col">
+                <h2>Statements</h2>
+                <hr>
+                <button onclick="sort_statements()" title="Sort statements by theme">⬅️</button>
+                <button onclick="order_statements_by_time()" title="Order statements by time">⬆️</button>
+                <button onclick="add_one_statement()" title="Add a new statement">➕</button>
+                <button onclick="purge_short_statements()" title="Remove empty statements">✂️</button>
+                <ul id="paralogic-statements">
+                </ul>
+            </div>
+            <div class="paralogic-col" >
+                <h2>Transcript</h2>
+                <hr>
+                <button id="record" title="Record transcript">🎙️</button>
+                <button id="sorttext" onclick="create_statements()" title="Process most recent transcript">📝</button>
+                <button id="sorttext" onclick="create_statements(true)" title="Reprocess entire transcript">🔄</button>
+    
+                <div id="paralogic-transcript" contenteditable="true">
+    
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+    <script src="paralogic.js"></script>
+</body>
+</html>

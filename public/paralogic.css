@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap');
+
+#paralogic-main {
+    font-family: 'Jost', Courier, monospace;
+    border: solid 3px black;
+    width: fit-content;
+    padding: 10px;
+    padding-top: 5px;
+    h1 {
+        font-style: italic;
+        margin: 0;
+    }
+}
+
+#paralogic-content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.paralogic-col {
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 400px;
+    border: solid 1.2px black;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 0px black;
+
+
+    h2 {
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1.2px solid black; 
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+}
+
+#paralogic-topoi-col {
+    max-width: 400px;
+}
+
+#paralogic-topoi {
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+#paralogic-topoi tr:nth-child(odd) {
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224);
+}
+
+#paralogic-transcript {
+    min-height: 330px;
+    width: 200px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+#paralogic-transcript:hover {
+    box-shadow: 0px 0px 2px grey;
+}
+
+button {
+    border: solid 1px black;
+    border-radius: 15%;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.recording {
+    background-color: red;
+}
